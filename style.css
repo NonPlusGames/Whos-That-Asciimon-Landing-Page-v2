@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #F62D14;
+}
+.header{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  color: #FAD61D;
+  text-shadow: 3px 3px #3466AF;
+  font-size: 1.875em;
+  padding: 20px;
+  padding-top: 10vh;
+}
+
+.game{
+  width: 350px;
+  margin: 0 auto;
+  background-color: ;
+}
+
+.window img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.menu{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button{
+  border: none;
+  border-radius: 15px;
+  background-color: #FAD61D;
+  box-shadow: 3px 3px #3466AF;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+.start{
+  margin: 0 25px;
+}
+
+.info{
+  margin: 0 35px;
+}
+
+.return{
+  margin: 0 auto;
+}
+
+.button a{
+  text-decoration: none;
+  color:#3466AF;
+}
+
+.information{
+  border: 10px ridge #3466AF;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #FAD61D; 
+}
+
+p{
+  text-align: center;
+  white-space: pre-wrap;
+  font-family: 'Press Start 2P', sans-serif;
+  color:#3466AF;
+}
+
+.bg-image{
+  display:inline-block;
+}
+
+.pika{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index:-1;
+}
+
+.poke{
+  position: fixed;
+  right:0;
+  top: 0;
+  z-index:-1;
+
+}
+
+.bg-image img{
+  height:50vh;
+}
+
+.poke img{
+  transform: rotate(-20deg);
+}
