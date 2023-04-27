@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="row accordion d-flex justify-content-center" id="accordion">
-          <div class="information collapse show" data-bs-parent="#accordion" id="instructions">
+          <div class="information collapse" data-bs-parent="#accordion" id="instructions">
           <p>
 Thankyou for playing [Who's That Asciimon!].
 This game is a riff on 'Who's That Pokemon!', which appeared in-between episodes of the cartoon
@@ -59,10 +59,43 @@ Type [score] to show your current score and number of available hints.
 Type [restart] to start a new game.
           </p>
           </div>
-          <div class="information collapse" data-bs-parent="#accordion" id="manifesto">
-            <p>
-TEST
-            </p>
+          <div class="information collapse show" data-bs-parent="#accordion" id="manifesto">
+<p>
+This project was designed with a set of <b>MOBILE FIRST</b> principles:
+
+<b>CONTENT</b> - Each page has the main content large, readable, and centered.
+
+<b>TOUCH FRIENDLY</b> - Simple navigation that is intuitive to touch input.
+
+<button class="button" style="padding-bottom: 0px;"><p>Buttons are designed
+to be large, readable,
+and include a shadow
+for enhanced contrast.</p></button>
+
+<button class="button infobutton" style="padding-bottom: 0px;"><p style="color:#FAD61D;">Some buttons have
+inverted colors to
+indicate that they
+have a seperate
+functional use.</p></button>
+</p>
+<p>
+<b>MINIMALIST PALETTE</b> -</p>
+<div class="row colors grid column-gap-1">
+  <div class="col-1 blue" alt="blue"></div>
+  <div class="col-1 red" alt="red"></div>
+  <div class="col-1 yellow" alt="yellow"></div>
+  <div class="col-1 white" style="color:white;" alt="white">.</div>
+</div>
+<p>
+This palette is reminiscent of the original red, blue, and yellow pokemon game releases.  As it is based on primary colors, the palette contrasts well yet is more nuanced since it consists of warmer and cooler hues.
+The background utilizes <span style="color:#F62D14; text-shadow:1px 1px 2px #000000;">#F62D14</span> as it's "white space" which is mostly blank except for large images that reinforce the theme.
+The buttons alternate <span style="color:#FAD61D; text-shadow:1px 1px 2px #000000;">#FAD61D</span> and <span style="color:#3466AF; text-shadow:1px 1px 1px #000000;">#3466AF</span> creating a nice contrast with the text.
+
+<img src="bootstrap-logo.svg" width="5%" alt="boostrap icon"/> <b>Bootstrap</b> - allows for content organization and responsive design. Buttons, text, and images are resized and shifted when viewed on larger screens.
+This informational panel was created using a combination of 'row', 'col', 'collapse', and 'accordion'. 'collapse' will open and close the content when the appropriate button is pressed while 'accordian' ensures only one panel is visible at a time.
+
+<b>FONT</b> - 'Press Start 2P' is a fun and readable google font reminiscent of 16-bit video games.
+</p> 
           </div>
         </div>
       </div>

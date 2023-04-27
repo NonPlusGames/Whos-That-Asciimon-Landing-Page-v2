@@ -46,8 +46,6 @@ body{
   font-size: .75em;
 }
 
-
-
 .button a{
   text-decoration: none;
   color:#3466AF;
@@ -60,6 +58,8 @@ body{
   padding-left: 5px;
   padding-right: 5px;
   background-color: rgba(255,255,255,0.7);
+  max-height: 48vh;
+  overflow-y: scroll;
 }
 
 p{
@@ -68,8 +68,34 @@ p{
   font-family: 'Press Start 2P', sans-serif;
   color:#3466AF;
   line-height: 1.5em;
-  max-height: 48vh;
-  overflow-y: scroll;
+  
+}
+
+.colors{
+  width:50%;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.colors .col-1{
+  box-shadow: 1px 1px black;
+  border-radius: 10px;
+}
+
+.white{
+  background-color: white;
+}
+
+.red{
+  background-color: #F62D14;
+}
+
+.blue{
+  background-color: #3466AF;
+}
+
+.yellow{
+  background-color: #FAD61D;
 }
 
 .bg-image{
@@ -121,11 +147,16 @@ p{
 
   .information {
     width: 60vw;
+    max-height: 47vh;
   }
 
   p {
     font-size: 1.1rem;
-    max-height: 47vh;
+    
+  }
+
+  .colors {
+    width: 35%;
   }
 
 }
