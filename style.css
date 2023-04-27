@@ -1,26 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
 html {
   height: 100%;
   width: 100%;
@@ -29,31 +8,24 @@ html {
 body{
   background-color: #F62D14;
 }
+
+.row{
+  padding: 10px;
+}
+
 .header{
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   color: #FAD61D;
   text-shadow: 3px 3px #3466AF;
   font-size: 1.875em;
-  padding: 20px;
-  padding-top: 10vh;
-}
-
-.game{
-  width: 350px;
-  margin: 0 auto;
-  background-color: ;
+  padding-top: 19vh;
+  margin-bottom: -20px;
 }
 
 .window img{
   width: 100%;
   border-radius: 15px;
-}
-
-.menu{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .button{
@@ -64,37 +36,40 @@ body{
   font-family: 'Press Start 2P', sans-serif;
   font-size: 1.25em;
   padding: 10px;
+  color: #3466AF;
 }
 
-.start{
-  margin: 0 25px;
+.infobutton{
+  color: #FAD61D;
+  background-color: #3466AF;
+  box-shadow: 3px 3px #225199;
+  font-size: .9em;
 }
 
-.info{
-  margin: 0 35px;
-}
 
-.return{
-  margin: 0 auto;
-}
 
 .button a{
   text-decoration: none;
   color:#3466AF;
+  text-align: center;
 }
 
 .information{
-  border: 10px ridge #3466AF;
+  border: 5px ridge #3466AF;
   border-radius: 10px;
-  padding: 5px;
-  background-color: #FAD61D; 
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(255,255,255,0.7);
 }
 
 p{
-  text-align: center;
+  font-size: .7rem;
   white-space: pre-wrap;
   font-family: 'Press Start 2P', sans-serif;
   color:#3466AF;
+  line-height: 1.5em;
+  max-height: 48vh;
+  overflow-y: scroll;
 }
 
 .bg-image{
@@ -116,10 +91,49 @@ p{
 
 }
 
-.bg-image img{
-  height:50vh;
+.pika img{
+  height:20vh;
 }
 
 .poke img{
+  height:20vh;
   transform: rotate(-20deg);
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .button{
+    font-size: 2em;
+  }
+
+  .two {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .pika img {
+    height: 40vh;
+  }
+
+  .poke img {
+    height: 40vh;
+  }
+
+  .information {
+    width: 60vw;
+  }
+
+  p {
+    font-size: 1.1rem;
+    max-height: 47vh;
+  }
+
+}
+
+@media only screen and (max-height: 685px) {
+
+  /* For small phone: */
+  .pika img {
+    height: 15vh;
+  }
 }

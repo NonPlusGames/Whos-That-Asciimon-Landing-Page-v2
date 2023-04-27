@@ -5,27 +5,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css" />
-</head
+</head>
+
+
 <body>
-  <div class="game">
-    <div class="header">
-      <h1>Who's That</h1>
-      <h1>Asciimon!?</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="header">
+        <h1>Who's That</h1>
+        <h1>Asciimon!??</h1>
+      </div>
     </div>
-    <div class="window">
-      <img src="ascii.JPG"/> 
+    <div class="row d-flex justify-content-center">
+      <div class="window col col-lg-4 " >
+        <img src="ascii.JPG" alt="ascii who's that pokemon picture"/>
+      </div>
     </div>
-    <div class="menu">
-      <button class="button start pixel-corners"><a href="start.html">START</a></button>
-      <button class="button info pixel-corners"><a href="info.html">INFO</a></button>
+    <div class="row justify-content-lg-center">
+      <div class="col col-lg-2 d-flex justify-content-center">
+        <button class="button start pixel-corners"><a href="start.html">START</a></button>
+      </div>
+      <div class="col col-lg-2 d-flex justify-content-center">
+        <button class="button info pixel-corners dflex"><a href="info.html">INFO</a></button>
+      </div>
     </div>
   </div>
+
+  <!-- BackGround -->
   <div class="bg-image pika">
-    <img src="pika.png"/>
+    <img src="pika.png" />
   </div>
   <div class="bg-image poke">
-    <img src="poke.png"/>
+    <img src="poke.png" />
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
+
 </html>
