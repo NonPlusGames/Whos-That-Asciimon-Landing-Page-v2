@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>WTA Info</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="header">
-          <h1>INFO</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <div class="row d-flex justify-content-center gx-5">
-          <div class="col-6 col-lg-4 d-flex justify-content-start justify-content-lg-end">
-            <button class="button infobutton one" type="button" data-bs-toggle="collapse" data-bs-target="#instructions"
-              aria-expanded="true" aria-controls="instructions">
-              Instructions
-            </button>
-          </div>
-          <div class="col-6 col-lg-4">
-            <button class="button infobutton two" type="button" data-bs-toggle="collapse" data-bs-target="#manifesto"
-              aria-expanded="false" aria-controls="manifesto">
-              Manifesto
-            </button>
-          </div>
+  <body>
+    <main class="container-fluid">
+      <header class="row">
+        <h1>INFO</h1>
+      <header>
+      <nav class="row d-flex justify-content-center gx-5">
+        <div class="col-6 col-lg-4 d-flex justify-content-start justify-content-lg-end">
+          <button
+            class="infobutton one"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#instructions"
+            aria-expanded="true"
+            aria-controls="instructions"
+          >
+            Instructions
+          </button>
         </div>
-        <div class="row accordion d-flex justify-content-center" id="accordion">
-          <div class="information collapse" data-bs-parent="#accordion" id="instructions">
+        <div class="col-6 col-lg-4">
+          <button
+            class="infobutton two"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#manifesto"
+            aria-expanded="false"
+            aria-controls="manifesto"
+            autofocus
+          >
+            Manifesto
+          </button>
+        </div>
+      </nav>
+      <article class="row accordion d-flex justify-content-center"
+        id="accordion"
+      >
+        <section
+          class="information collapse"
+          data-bs-parent="#accordion"
+          id="instructions"
+        >
+          <!-- 'p' tag conent not indented to facilitate pre-wrap css -->
           <p>
 Thankyou for playing [Who's That Asciimon!].
 This game is a riff on 'Who's That Pokemon!', which appeared in-between episodes of the cartoon
-adaptation of the widely popular video game series 'Pokemon'. Much like the series, this game
-will show you a silhouette of a random pokemon made out of ascii characters and you have to guess who it is.
-Please refer to the following rules while playing. Have Fun!
+adaptation of the widely popular video game series 'Pokemon'.  Much like the series, this game
+will show you a silhouette of a random pokemon made out of ascii characters and you have to guess who it is.  
+Please refer to the following rules while playing.  Have Fun!
 
-
+      
 RULES:
 1) You have 3 guesses to correctly name the pokemon. The shorter number of guesses the more points.
 2) You have access to a total of 3 hints for the whole game.
-3) If you ever get all three guesses wrong. The game will end and save your High Score.
+3) If you ever get all three guesses wrong.  The game will end and save your High Score.
 
-
+      
 INSTRUCTIONS:
 When you encounter this symbol [::] type in your response and press [ENTER].
 Type [guess] to make a guess at the pokemon
@@ -58,65 +77,79 @@ Type [hint] to use up one of your hints.
 Type [score] to show your current score and number of available hints.
 Type [restart] to start a new game.
           </p>
-          </div>
-          <div class="information collapse show" data-bs-parent="#accordion" id="manifesto">
-<p>
+        </section>
+        <section
+          class="information collapse show"
+          data-bs-parent="#accordion"
+          id="manifesto"
+        >
+          <!-- 'p' tag conent not indented to facilitate pre-wrap css -->
+          <p>
 This project was designed with a set of <b>MOBILE FIRST</b> principles:
 
 <b>CONTENT</b> - Each page has the main content large, readable, and centered.
 
 <b>TOUCH FRIENDLY</b> - Simple navigation that is intuitive to touch input.
 
-<button class="button" style="padding-bottom: 0px;"><p>Buttons are designed
+<button>
+<p>Buttons are designed
 to be large, readable,
-and include a shadow
-for enhanced contrast.</p></button>
+and include a shadow 
+for enhanced contrast.</p>
+</button>
 
-<button class="button infobutton" style="padding-bottom: 0px;"><p style="color:#FAD61D;">Some buttons have
-inverted colors to
-indicate that they
-have a seperate
-functional use.</p></button>
-</p>
-<p>
-<b>MINIMALIST PALETTE</b> -</p>
-<div class="row colors grid column-gap-1">
-  <div class="col-1 blue" alt="blue"></div>
-  <div class="col-1 red" alt="red"></div>
-  <div class="col-1 yellow" alt="yellow"></div>
-  <div class="col-1 white" style="color:white;" alt="white">.</div>
-</div>
-<p>
-This palette is reminiscent of the original red, blue, and yellow pokemon game releases.  As it is based on primary colors, the palette contrasts well yet is more nuanced since it consists of warmer and cooler hues.
-The background utilizes <span style="color:#F62D14; text-shadow:1px 1px 2px #000000;">#F62D14</span> as it's "white space" which is mostly blank except for large images that reinforce the theme.
-The buttons alternate <span style="color:#FAD61D; text-shadow:1px 1px 2px #000000;">#FAD61D</span> and <span style="color:#3466AF; text-shadow:1px 1px 1px #000000;">#3466AF</span> creating a nice contrast with the text.
+<button class="infobutton">
+<p>Some buttons have 
+inverted colors to 
+indicate that they 
+have a seperate 
+functional use.</p>
+</button>
+          </p>
+          
+          <p><b>MINIMALIST PALETTE</b> -</p>
+          <div class="row colors grid column-gap-1">
+            <div class="col-1 blue" alt="blue"></div>
+            <div class="col-1 red" alt="red"></div>
+            <div class="col-1 yellow" alt="yellow"></div>
+            <div class="col-1 white" alt="white">
+              .
+            </div>
+          </div>
+          
+          <!-- 'p' tag conent not indented to facilitate pre-wrap css -->
+          <p>
+This palette is reminiscent of the original red, blue, and yellow pokemon game releases. As it is based on primary colors, the palette contrasts well yet is more nuanced since it consists of warmer and cooler hues. 
+The background utilizes <span class="red">#F62D14</span> as it's "white space" which is mostly blank except for large images that reinforce the theme. 
+The buttons alternate <span class="yellow">#FAD61D</span> and <span class="blue">#3466AF</span> creating a nice contrast with the text.
 
-<img src="bootstrap-logo.svg" width="5%" alt="boostrap icon"/> <b>Bootstrap</b> - allows for content organization and responsive design. Buttons, text, and images are resized and shifted when viewed on larger screens.
-This informational panel was created using a combination of 'row', 'col', 'collapse', and 'accordion'. 'collapse' will open and close the content when the appropriate button is pressed while 'accordian' ensures only one panel is visible at a time.
+<img src="bootstrap-logo.svg" width="5%" alt="boostrap icon" /> <b>Bootstrap</b> - allows for content organization and responsive design. Buttons, text, and images are resized and shifted when viewed on larger screens. This informational panel was created using a combination of 'row', 'col', 'collapse', and 'accordion'. 'collapse' will open and close the content when the appropriate button is pressed while 'accordian' ensures only one panel is visible at a time.
 
 <b>FONT</b> - 'Press Start 2P' is a fun and readable google font reminiscent of 16-bit video games.
-</p> 
-          </div>
+          </p>
+        </section>
+      </article>
+
+      <nav class="row justify-content-lg-center">
+        <div class="col col-lg-4 d-flex justify-content-end">
+          <button class="button return pixel-corners">
+            <a href="index.html">RETURN</a>
+          </button>
         </div>
-      </div>
+      </nav>
+    </main>
+
+    <!-- Background -->
+    <div class="bg-image pika">
+      <img src="pika.png" alt="pikachu background image"/>
     </div>
-
-    <div class="row justify-content-lg-center">
-      <div class="col col-lg-4 d-flex justify-content-end">
-        <button class="button return pixel-corners"><a href="index.html">RETURN</a></button>
-      </div>
+    <div class="bg-image poke">
+      <img src="poke.png" alt="pokeball background image"/>
     </div>
-
-  </div>
-
-
-  <div class="bg-image pika">
-    <img src="pika.png"/>
-  </div>
-  <div class="bg-image poke">
-    <img src="poke.png"/>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

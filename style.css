@@ -1,134 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 html {
   height: 100%;
   width: 100%;
 }
 
-body{
-  background-color: #F62D14;
+body {
+  background-color: #f62d14;
 }
 
-.row{
+.row {
   padding: 10px;
 }
 
-.header{
-  font-family: 'Press Start 2P', cursive;
+header h1 {
+  font-family: "Press Start 2P", cursive;
   text-align: center;
-  color: #FAD61D;
-  text-shadow: 3px 3px #3466AF;
+  color: #fad61d;
+  text-shadow: 3px 3px #3466af;
   font-size: 1.875em;
-  padding-top: 19vh;
-  margin-bottom: -20px;
+  padding-top: 18vh;
 }
 
-.window img{
+.window img {
   width: 100%;
   border-radius: 15px;
 }
 
-.button{
+button {
+  all: unset;
   border: none;
   border-radius: 15px;
-  background-color: #FAD61D;
-  box-shadow: 3px 3px #3466AF;
-  font-family: 'Press Start 2P', sans-serif;
+  background-color: #fad61d;
+  box-shadow: 3px 3px #3466af;
+  font-family: "Press Start 2P", sans-serif;
   font-size: 1.25em;
   padding: 10px;
-  color: #3466AF;
+  color: #3466af;
 }
 
-.infobutton{
-  color: #FAD61D;
-  background-color: #3466AF;
+.infobutton:focus {
+  filter: brightness(100%);
+}
+
+.infobutton {
+  color: #fad61d;
+  background-color: #3466af;
   box-shadow: 3px 3px #225199;
-  font-size: .75em;
+  font-size: 0.75em;
+  filter: brightness(80%);
 }
 
-.button a{
+.infobutton p {
+  color: #fad61d;
+}
+
+p .infobutton {
+  filter: brightness(100%);
+}
+
+button a {
   text-decoration: none;
-  color:#3466AF;
+  color: #3466af;
   text-align: center;
 }
 
-.information{
-  border: 5px ridge #3466AF;
+.information {
+  border: 5px ridge #3466af;
   border-radius: 10px;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   max-height: 48vh;
   overflow-y: scroll;
 }
 
-p{
-  font-size: .7rem;
-  white-space: pre-wrap;
-  font-family: 'Press Start 2P', sans-serif;
-  color:#3466AF;
-  line-height: 1.5em;
-  
+.information button p {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
-.colors{
-  width:50%;
+p {
+  font-size: 0.7rem;
+  white-space: pre-wrap;
+  font-family: "Press Start 2P", sans-serif;
+  color: #3466af;
+  line-height: 1.5em;
+}
+
+.colors {
+  width: 50%;
   margin-top: -20px;
   margin-bottom: -20px;
 }
 
-.colors .col-1{
+.colors .col-1 {
   box-shadow: 1px 1px black;
   border-radius: 10px;
 }
 
-.white{
+.white {
   background-color: white;
+  color: white;
 }
 
-.red{
-  background-color: #F62D14;
+.red {
+  background-color: #f62d14;
+  color: #f62d14;
 }
 
-.blue{
-  background-color: #3466AF;
+.blue {
+  background-color: #3466af;
+  color: #3466af;
 }
 
-.yellow{
-  background-color: #FAD61D;
+.yellow {
+  background-color: #fad61d;
+  color: #fad61d;
 }
 
-.bg-image{
-  display:inline-block;
+p span {
+  background-color: transparent !important;
+  text-shadow: 1px 1px 2px #000000;
 }
 
-.pika{
+.bg-image {
+  display: inline-block;
+}
+
+.pika {
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index:-1;
+  z-index: -1;
 }
 
-.poke{
+.poke {
   position: fixed;
-  right:0;
+  right: 0;
   top: 0;
-  z-index:-1;
-
+  z-index: -1;
 }
 
-.pika img{
-  height:20vh;
+.pika img {
+  height: 20vh;
 }
 
-.poke img{
-  height:20vh;
+.poke img {
+  height: 20vh;
   transform: rotate(-20deg);
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .button{
+  button {
+    font-size: 2em;
+  }
+
+  .infobutton {
     font-size: 2em;
   }
 
@@ -152,17 +182,14 @@ p{
 
   p {
     font-size: 1.1rem;
-    
   }
 
   .colors {
     width: 35%;
   }
-
 }
 
 @media only screen and (max-height: 685px) {
-
   /* For small phone: */
   .pika img {
     height: 15vh;
